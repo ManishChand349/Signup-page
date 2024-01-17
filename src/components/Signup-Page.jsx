@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Signup.css";
+
 
 const SignUpPage = () => {
   const [formData, setFormData] = useState({
@@ -75,9 +75,9 @@ const SignUpPage = () => {
           </div>
       </div>
       <p className="text-center my-[2rem]">or sign up with email</p>
-        <div className="signup-container">
-          <form onSubmit={handleSubmit} className="required">
-            <label className="block text-1xl font-medium text-gray-700">
+        <div className="max-w-[400px] my-[0] mx-auto">
+          <form onSubmit={handleSubmit} className="required flex flex-col">
+            <label className="block text-1xl font-medium text-gray-700 mb-[10px]">
               
               <input
                 type="number"
@@ -89,7 +89,7 @@ const SignUpPage = () => {
               />
               {errors.phone && <p className="error-message">{errors.phone}</p>}
             </label>
-            <label className="block text-1xl font-medium text-gray-700">
+            <label className="block text-1xl font-medium text-gray-700 mb-[10px]">
              
               <input
                 type="email"
@@ -101,7 +101,7 @@ const SignUpPage = () => {
               />
               {errors.email && <p className="error-message">{errors.email}</p>}
             </label>
-            <label className="block text-1xl font-medium text-gray-700">
+            <label className="block text-1xl font-medium text-gray-700 mb-[10px]">
              
               <input
                 type="password"
@@ -122,9 +122,9 @@ const SignUpPage = () => {
               Sign Up
             </button>
           </form>
-          {errors.server && <p className="error-message">{errors.server}</p>}
+          {errors.server && <p className="error-message text-red-600">{errors.server}</p>}
           {successMessage && (
-            <p className="success-message">{successMessage}</p>
+            <p className="success-message text-green-800">{successMessage}</p>
           )}
         </div>
       </div>

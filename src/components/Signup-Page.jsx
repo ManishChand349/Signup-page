@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Signup.css";
 
-const SignupPage = () => {
+const SignUpPage = () => {
   const [formData, setFormData] = useState({
     phone: "",
     email: "",
@@ -132,4 +132,4 @@ const SignupPage = () => {
   );
 };
 
-export default SignupPage;
+export default SignUpPage;

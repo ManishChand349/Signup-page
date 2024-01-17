@@ -1,4 +1,4 @@
-import SignupPage from "./components/SignupPage";
+import SignUpPage from "./components/Signup-Page"
 
 
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <div>
-    <SignupPage/>
+    <SignUpPage/>
       
     </div>
     </>

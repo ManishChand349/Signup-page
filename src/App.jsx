@@ -4,7 +4,7 @@ import SignupPage from "./components/SignupPage.jsx";
 function App() {
   return (
     <>
-    <div >
+    <div>
 
       <SignupPage/>
     </div>
